@@ -39,7 +39,7 @@ header {
 }
 
 .nav-item {
-    margin: 0 15px;
+    margin: 0 30px;
 }
 
 .nav-link {
@@ -54,6 +54,7 @@ header {
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #e9500e;
+    cursor: pointer;
 }
 
 .login-button button a {
@@ -67,6 +68,10 @@ header {
     display: none;
 }
 
+.login-button:hover {
+    opacity: 0.8;
+}
+
 .mobile-menu {
     display: none;
 }
@@ -74,12 +79,20 @@ header {
 /* HOME */
 .home {
     min-height: 100vh;
-    background-image: url(/assets/img/img-home.jpg);
+    background-image: url(/Transmartins/assets/img/img-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+h1 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 120px;
+}
+span {
+    color: #FF8800;
+}
 
 
 
