@@ -82,7 +82,7 @@ header {
 /* HOME */
 .home {
     min-height: 100vh;
-    background-image: url(/Transmartins/assets/img/img-home.jpg);
+    background-image: url(/assets/img/img-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -152,12 +152,21 @@ header {
 
 .imagens-sobre img {
     position: absolute;
-    z-index: 2;
-
 }
 
-.imagens-sobre img .sol {
-    left: -80px;
+.imagens-sobre .sol {
+    margin-left: 170px;
+    z-index: -1;
+    padding-top: 250px;
+}
+
+.texto-sobre-img {
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 290px;
+    background-color: #0B2F44;
+    width: 288px;
+    height: 142px;
 }
 
 
