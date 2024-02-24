@@ -7,4 +7,4 @@ function menuShow() {
         menuMobile.classList.add('open');
         document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
     }
-}
+};
