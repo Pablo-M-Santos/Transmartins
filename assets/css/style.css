@@ -83,7 +83,7 @@ header {
 /* HOME */
 .home {
     min-height: 100vh;
-    background-image: url(Transmartins/img/img-home.png);
+    background-image: url(/Transmartins/assets/img/img-home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@ header {
 .texto-home {
     justify-content: center;
     text-align: left;
-    padding-top: 150px;
+    padding-top: 200px;
     color: #fff;
     width: 50%;
     margin-left: 15%;
