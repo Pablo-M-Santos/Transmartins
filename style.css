@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
-
+    list-style: none;
 }
 
 body {
@@ -39,7 +39,7 @@ header {
 .nav-list ul {
     display: flex;
     justify-content: center;
-    list-style: none;
+    
 }
 
 .nav-item {
@@ -83,7 +83,7 @@ header {
 /* HOME */
 .home {
     min-height: 100vh;
-    background-image: url('/assets/img/img-home.jpg');
+    background-image: url(../img/img-home.jpg   );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,7 +92,7 @@ header {
 .texto-home {
     justify-content: center;
     text-align: left;
-    padding-top: 220px;
+    padding-top: 150px;
     color: #fff;
     width: 50%;
     margin-left: 15%;
@@ -118,7 +118,7 @@ header {
 
 .texto-home button {
     padding: 18px 38px;
-    margin-top: 40px;
+    margin: 40px auto;
     border: 1px solid #fff;
     background-color: transparent;
     font-size: 16px;
@@ -126,7 +126,6 @@ header {
     color: #fff;
     cursor: pointer;
     transition: 0.25s ease;
-    ;
 }
 
 .texto-home button:hover {
@@ -268,8 +267,11 @@ header {
 
 /* SERVICOS */
 
+.servicos {
+    height: 100vh;
+}
 .servicos .texto-titulo {
-
+    padding-top: 100px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
@@ -293,19 +295,72 @@ header {
     margin: 0px 109px 50px;
 }
 
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 12%;
+}
+
+.servicos-card{
+    background-color: #fff;
+    padding: 30px;
+    border: 20px solid #f2f2f2b9;
+    transition: 0.25s ease;
+}
 
 
+.servicos-card:hover {
+    border-color: #FF8800;
+}
 
+.servicos-card:focus-within {
+    border-color: #FF8800;
+}
 
+.card-icon {
+    margin-bottom: 30px;
 
+}
 
+.card-icon img {
+    width: auto;
+    height: 60px;
+}
 
+.num-servicos {
+    color: #FF8800;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
 
+.servicos-card h3 {
+    color: #0B2E42;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
 
+.card-texto {
+    margin: 10px 0px 20px 0px;
+    color: #3d3d3d;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+}
 
-
-
-
+.btn-link {
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FF8800;
+    font-size: 18px;
+    font-family: 'Rubik',sans-serif;
+    gap: 5px;
+}
+.btn-link i {
+    font-size: 30px;
+}
 
 
 
