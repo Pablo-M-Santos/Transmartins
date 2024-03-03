@@ -21,6 +21,9 @@ A Transmartins é composto por 5 seções diferentes:
 ## 👨🏽‍💻 Tecnologias utilizadas
 Para o desenvolvimento da Transmartins usarei as seguintes tecnologias:
   - Visual Studio Code;
+  - Figma
   - HTML ;
   - Css;
   - JavaScript ;
+  - PHP
+  - MySQL
