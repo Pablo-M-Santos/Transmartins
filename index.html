@@ -2,211 +2,455 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transmartins | Pablo</title>
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="Pablo-M-Santos">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Portfólio | Pablo Santos</title>
+  <meta name="description" content="Desenvolvedor Front - end">
+  <link rel="shortcut icon" href="./imagens/logo_pablo_santos.png" type="image/x-icon">
+  <!-- icons  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <a href="index.html"><img class="logo" src="../Transmartins/assets/img/logo-removebg-preview.png"
-                    alt="Logo da Transmartins"></a>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">Pablo Santos</a>
+    <!-- ICON MENU -->
+    <i class='bx bx-menu' id="menu-icon" style='color:#334155'></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#quem-sou">Quem sou</a>
+      <a href="#formacao">Formação</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <!-- MAIN-->
+  <main>
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="home-container">
+          <img class="home-img" src="./imagens/foto-perfil.png" alt="Pablo Santos - Perfil">
+          <div class="home-texto">
+            <h1>Olá, eu sou<br><strong id="home-nome">Pablo Santos,</strong></h1>
+            <h2>sou <span> desenvolvedor Front-End.</span></h2>
 
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Estoque</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="login-button">
-                <button><a href="cadastro.html">Área do CLiente</a></button>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="../Transmartins/assets/img/menu_white_36dp (1).svg" alt=""></button>
-            </div>
-        </nav>
-    </header>
-    <main>
-
-        <!-- HOME -->
-        <section class="home" id="home">
-            <div class="texto-home">
-                <h1><span>A CADA </span>DIREÇÃO</h1>
-                <h2>Tornando cada entrega não apenas um transporte, mas</h2><br>
-                <h2> uma conexão de confiança e compromisso</h2>
-                <button type="submit">VER SERVIÇOS</button>
-            </div>
-        </section>
-
-
-        <!-- SOBRE -->
-        <section class="sobre" id="sobre">
-            <div class="container-sobre">
-                <div class="imagens-sobre">
-                    <img class="trabalhador" src="../Transmartins/assets/img/trabalhador1.jpg" alt="">
-                    <img class="sol" src="../Transmartins/assets/img/sol-sobre.png" alt="">
-                </div>
-                <div class="texto-sobre-img">
-                    <img src="../Transmartins/assets/img/img-sobre-texto.png" alt="">
-                </div>
-                <div class="titulo-sobre" >
-                    <h2 class="titulo">PORQUE ESCOLHER-NOS</h2>
-                    <h2 class="sub-titulo">Somos uma agência profissional de logística e carga</h2>
-                    <p class="texto">Entregar serviços de transporte rodoviário de cargas, com segurança e melhoria
-                        contínua dos processos, desenvolvendo ações para o meio ambiente e sociedade e, gerando valor
-                        aos clientes, colaboradores, agregados e sócios.</p>
-
-                    <ul class="lista">
-                        <li class="itens"><i class='bx bx-chevron-right' style='color:#ff8800'></i>Vá além da logística,
-                            faça o mundo girar e revolucione os negócios.</li>
-                        <li class="itens"><i class='bx bx-chevron-right' style='color:#ff8800'></i>Logística através da
-                            inovação, dedicação e tecnologia. pronto, definido, pronto.</li>
-                        <li class="itens"><i class='bx bx-chevron-right' style='color:#ff8800'></i>Temos orgulho em
-                            atender nossos clientes com segurança. junto com paixão.</li>
-                        <li class="itens"><i class='bx bx-chevron-right' style='color:#ff8800'></i>Imaginação o que
-                            podemos ver facilmente é apenas uma pequena porcentagem.</li>
-                        <li class="itens"><i class='bx bx-chevron-right' style='color:#ff8800'></i>A qualidade nunca sai
-                            de moda. segurança, qualidade, profissionalismo.</li>
-                        <li class="itens"><i class='bx bx-chevron-right' style='color:#ff8800'></i>A qualidade
-                            transparece em cada movimento que fazemos onde a empresa reside.</li>
-                    </ul>
-
-                    <a class="btn" href="#">Saber mais</a>
-                </div>
+            <div class="social-media">
+              <a href="https://wa.me/558592822527?text=Olá!,%20eu%20vim%20do%20seu%20Portfólio
+              "><i class='bx bxl-whatsapp'></i></a>
+              <a href="https://github.com/Pablo-M-Santos"><i class='bx bxl-github'></i></i></a>
+              <a href="https://www.linkedin.com/in/pablo-santos-25773025b/"><i class='bx bxl-linkedin'></i></a>
+              <a href="mailto:pablomoreirasantos.hp@gmail.com"><i class='bx bx-envelope'></i></a>
+              <a href="https://www.instagram.com/pablo_santosti/"><i class='bx bxl-instagram'></i></a>
 
             </div>
-        </section>
+            <a href="https://drive.google.com/file/d/1ZF9Nb02kJUqerxZo3F58bUWtjx7sUIVx/view?usp=drivesdk"
+              class="btn">Currículo</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- SERVIÇOS -->
-        <section class="servicos" id="servicos">
-            <div class="texto-titulo">
-                <h2 class="titulo-servicos">TODOS OS SERVIÇOS</h2>
-                <h2 class="sub-titulo-servicos">Confiável em nossos serviços</h2>
-                <p class="texto-servicos">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e
-                    composição tipográfica, o texto fictício padrão desde quando uma impressora foi usada.</p>
+    <!-- QUEM SOU -->
+    <img class="onda" src="./imagens/onda-home.png" alt="">
+    <section class="quem-sou" id="quem-sou">
+      <div class="quem-sou-content">
+        <div class="quem-sou-container">
+          <img class="quem-sou-img" src="./imagens/quem-sou-img.png" alt="">
+          <div class="quem-sou-texto">
+            <h2><strong>Quem Sou</strong></h2>
+            <h3>Desenvolvedor Front - End</h3>
+            <p>Olá, meu nome é Pablo Moreira Santos. Atualmente, estou estudando e cursando o curso técnico em
+              Informática. Estou em busca de oportunidades de emprego na área de programação Front-End, ansioso para
+              demonstrar meus conhecimentos e sempre empenhado em aprender mais.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FORMAÇÃO -->
+    <img class="onda-botton" src="./imagens/onda-quem-sou.png" alt="">
+    <section class="formacao" id="formacao">
+      <div class="container">
+        <h2>Formação</h2>
+        <div class="formacao-grade">
+          <div class="formacao-tecnica">
+            <h3 class="sub-titulo">Formação</h3>
+            <p><strong>Técnico em Informática</strong> - EEEP Luíza de Teodoro Vieira </p>
+            <p class="time">2022 - 2024</p>
+          </div>
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>Lógica de Programação</strong></p>
+            <p class="time">2022 - 2023</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>HTML</strong> - DIO</p>
+            <p class="time">2022 - 2024</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>CSS</strong> - DIO</p>
+            <p class="time">2022 - 2024</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>JavaScript</strong> - DIO</p>
+            <p class="time">2022 - 2024</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>React</strong></p>
+            <p class="time">Estudando . . .</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>Java</strong></p>
+            <p class="time">Estudando . . .</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>Python</strong></p>
+            <p class="time">2022 - 2023</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p class="p-extend"><strong>Design</strong> - Figma</p>
+            <p class="time">2023 - 2024</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>SQL</strong></p>
+            <p class="time">2023 - 2024</p>
+          </div>
+
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p class="p-extend"><strong>Banco de Dados</strong></p>
+            <p class="time">2023 - 2024</p>
+          </div>
+
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p><strong>Robótica</strong> - Programação</p>
+            <p class="time">2022 - 2023</p>
+          </div>
+
+          <div class="curso">
+            <h3 class="sub-titulo">Curso</h3>
+            <p class="p-extend"><strong>Manutenção</strong> - Computadores</p>
+            <p class="time">2022 - 2024</p>
+          </div>
+
+
+        </div>
+
+        <div class="habilidades">
+          <h3 class="formacao-titulo">Habilidades</h3>
+          <div class="habilidades-grade">
+            <div class="bloco">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript (aprendendo)</p>
             </div>
 
-            <ul class="servicos-lista">
-                <li>
-                    <div class="servicos-card">
-                        <div class="card-icon"><img src="../Transmartins/assets/img/icon1.png" alt=""></div>
-                        <h3 class="card-titulo"><span class="num-servicos">01</span> Frete aéreo</h3>
-                        <p class="card-texto">Nosso objetivo é otimizar e melhorar sua cadeia de suprimentos para que possamos oferecer o melhor serviço.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="servicos-card">
-                        <div class="card-icon"><img src="../Transmartins/assets/img/icon2.png" alt=""></div>
-                        <h3 class="card-titulo"><span class="num-servicos">02</span> Transporte rodoviário de mercadorias</h3>
-                        <p class="card-texto">Nosso objetivo é otimizar e melhorar sua cadeia de suprimentos para que possamos oferecer o melhor serviço.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="servicos-card">
-                        <div class="card-icon"><img src="../Transmartins/assets/img/icon3.png" alt=""></div>
-                        <h3 class="card-titulo"><span class="num-servicos">03</span> Carga marítima</h3>
-                        <p class="card-texto">Nosso objetivo é otimizar e melhorar sua cadeia de suprimentos para que possamos oferecer o melhor serviço.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="servicos-card">
-                        <div class="card-icon"><img src="../Transmartins/assets/img/icon4.png" alt="" width="80" height="60"></div>
-                        <h3 class="card-titulo"><span class="num-servicos">04</span> Frete Ferroviário</h3>
-                        <p class="card-texto">Nosso objetivo é otimizar e melhorar sua cadeia de suprimentos para que possamos oferecer o melhor serviço.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="servicos-card">
-                        <div class="card-icon"><img src="../Transmartins/assets/img/icon5.png" alt=""></div>
-                        <h3 class="card-titulo"><span class="num-servicos">05</span> Armazenagem</h3>
-                        <p class="card-texto">Nosso objetivo é otimizar e melhorar sua cadeia de suprimentos para que possamos oferecer o melhor serviço.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="servicos-card">
-                        <div class="card-icon"><img src="../Transmartins/assets/img/icon6.png" alt=""></div>
-                        <h3 class="card-titulo"><span class="num-servicos">06</span> Carga do Projeto</h3>
-                        <p class="card-texto">Nosso objetivo é otimizar e melhorar sua cadeia de suprimentos para que possamos oferecer o melhor serviço.</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Estimativa -->
-        <section class="estimativa">
-            <div class="animated"></div>
-            <div class="titulo">
-                <h2 class="texto-titulo">ESTIMATIVA</h2>
-                <h2 class="sub-titulo">Possui uma ampla gama de soluções</h2>
-                <p>Desde 1953 no mercado de transporte de cargas, a Transmartins conta com uma frota nova e 
-                    moderna, tecnologia de ponta, e, principalmente, com uma equipe de profissionais devidamente capacitados 
-                    para o melhor atendimento.</p>
+            <div class="bloco">
+              <p>Lógica de Programação</p>
+              <p>Python</p>
+              <p>Figma</p>
             </div>
 
-            <div class="cards">
-                <!-- card1 -->
-                <div class="card">
-                    <h2 class="numero">01</h2>
-                    <div class="item">
-                        <img src="./assets/img/estimativa1.png" alt="imagem de folhas">
-                        <h3>Soluções e especializadas</h3>
-                        <p>Nosso objetivo é otimizar e melhorar sua 
-                            cadeia de suprimentos para que 
-                            possamos oferecer o melhor serviço</p>
-                    </div>
-                </div>
-                <!-- card2 -->
-                <div class="card">
-                    <h2 class="numero">02</h2>
-                    <div class="item">
-                        <img src="./assets/img/estimativa2.png" alt="imagem de folhas">
-                        <h3>Vários armazéns</h3>
-                        <p>Oferecemos vários locais de entrega e
-                            retirada para que você não precise se 
-                            preocupar. E você não deve enfrentar 
-                            nenhum tipo...</p>
-                    </div>
-                </div>
-                <!-- card3 -->
-                <div class="card">
-                    <h2 class="numero">03</h2>
-                    <div class="item">
-                        <img src="./assets/img/estimativa3.png" alt="imagem de folhas">
-                        <h3>Rastreamento facilitado</h3>
-                        <p>Um número de rastreamento para todo 
-                            o processo. para que você possa 
-                            encontrar a posição exata. este 
-                            processo irá ajudá-lo</p>
-                    </div>
-                </div>
+            <div class="bloco">
+              <p>Manutenção</p>
+              <p>Banco de Dados</p>
+              <p>SQL</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Contato -->
-        <section class="contato" id="contato">
-            <div class="background"></div>
-            <div class="container-contato">
-                <img class="img-texto" src="./assets/img/funcionario.png" alt="">
-                <p class="texto-contato">Inscreva-se para ofertas e novidades</p>
-
-                <form>
-                    <input type="email" placeholder="Digite o seu E-mail">
-                    <button type="submit">Inscreva-se agora</button>
-                </form>
+        <div class="competencias">
+          <h3 class="formacao-titulo">Competências</h3>
+          <div class="competencias-grade">
+            <div class="bloco">
+              <p>Trabalho em Equipe</p>
+              <p>Resolução de Problemas</p>
+              <p>Criatividade</p>
+              <p>Respeito</p>
             </div>
-        </section>
-    </main>
-    <script src="../Transmartins/assets/js/script.js"></script>
+
+            <div class="bloco">
+              <p>Capacidade de Adaptação</p>
+              <p>Curiosidade</p>
+              <p>Atenção Para Ouvir</p>
+              <p>Agilidade de Aprendizado</p>
+            </div>
+
+            <div class="bloco">
+              <p>Trabalho Sob Pressão</p>
+              <p>Comunicação</p>
+              <p>Princípios Éticos </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="idiomas">
+          <h3 class="formacao-titulo">Idiomas</h3>
+          <div class="idiomas-grade">
+            <div class="bloco">
+              <p>Inglês / Básico (aprendendo)</p>
+              <p>Espanhol / Básico</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projetos" id="projetos">
+      <div class="projetos-container">
+        <h2>Projetos</h2>
+        <!-- TRANSMARTINS -->
+        <div class="projetos-box" id="right">
+          <div class="texto" id="texto">
+            <h3 class="nome">TRANSMARTINS</h3>
+            <p class="detalhe">Transmartins é uma transportadora profissional, a empresa conta com uma frota moderna e
+              diversificada, mudando sempre qualidade, oferta e segurança nos serviços prestados.</p>
+            <div class="ferramentas">
+              <span title="FIGMA">
+                <svg xmlns="http://www.w3.org/2000/svg" alt="FIGMA" title="FIGMA" width="48" height="48"
+                  viewBox="0 0 48 48">
+                  <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
+                  <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
+                  <path fill="#66bb6a"
+                    d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path>
+                  <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
+                  <circle title="FIGMA" cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+                </svg>
+              </span>
+              <i class='bx bxl-html5' style='color:#e65100' title="HTML"></i>
+              <i class='bx bxl-css3' style='color:#0277bd' title="CSS"></i>
+              <i class='bx bxl-javascript' style='color:#ffd600' title="JavaScript"></i>
+              <i class='bx bxl-php' style='color:#777bb3' title="PHP"></i>
+              <i class='bx bx-data' title="Banco de dados (MYSQL)"></i>
+            </div>
+
+            <div class="links">
+              <a class="site" href="https://eletronic-arts.netlify.app">VER SITE<i id="seta"
+                  class='bx bx-chevron-right'></i></a>
+              <a href="https://github.com/Pablo-M-Santos/Eletronic-Arts" class="github" style="margin-right: 0px;"><i
+                  class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <img id="img-right" src=".//imagens/transmartins.png" alt="">
+        </div>
+        <!-- ATUAL CARGAS -->
+        <div class="projetos-box">
+          <img src="./imagens/Atual_Cargas.png" alt="Mockup Atual Cargas" title="Mockup da Atual Cargas">
+          <div class="texto">
+            <h3 class="nome">ATUAL CARGAS</h3>
+            <p class="detalhe">Site baseado na empresa Atual Cargas uma transportadora que usa a logística no seu
+              cotidiano.</p>
+            <div class="ferramentas">
+              <i class='bx bxl-html5' style='color:#e65100' title="HTML"></i>
+              <i class='bx bxl-css3' style='color:#0277bd' title="CSS"></i>
+              <i class='bx bxl-javascript' style='color:#ffd600' title="JavaScript"></i>
+              <span title="FIGMA">
+                <svg xmlns="http://www.w3.org/2000/svg" alt="FIGMA" title="FIGMA" width="48" height="48"
+                  viewBox="0 0 48 48">
+                  <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
+                  <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
+                  <path fill="#66bb6a"
+                    d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path>
+                  <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
+                  <circle title="FIGMA" cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+                </svg>
+              </span>
+              <i class='bx bxl-php' style='color:#777bb3' title="PHP"></i>
+              <i class='bx bx-data' title="Banco de dados (MYSQL)"></i>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Pablo-M-Santos/Atual-Cargas" class="github" title="GitHub"
+                style="margin-left: 0px;"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- ELETRONIC ARTS -->
+        <div class="projetos-box" id="right">
+          <div class="texto" id="texto">
+            <h3 class="nome">ELETRONIC ARTS GAMES</h3>
+            <p class="detalhe">Site da Eletronic Arts, proporcionando uma experiência única aos amantes do universo dos
+              jogos eletrônicos.</p>
+            <div class="ferramentas">
+              <i class='bx bxl-html5' style='color:#e65100' title="HTML"></i>
+              <i class='bx bxl-css3' style='color:#0277bd' title="CSS"></i>
+              <i class='bx bxl-javascript' style='color:#ffd600' title="JavaScript"></i>
+              <i class='bx bxl-bootstrap' style='color:#7c4dff' title="BOOTSTRAP"></i>
+            </div>
+
+            <div class="links">
+              <a class="site" href="https://eletronic-arts.netlify.app">VER SITE<i id="seta"
+                  class='bx bx-chevron-right'></i></a>
+              <a href="https://github.com/Pablo-M-Santos/Eletronic-Arts" class="github" style="margin-right: 0px;"><i
+                  class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <img id="img-right" src=".//imagens/Eletronic_Arts.png" alt="">
+        </div>
+        <!-- UECE - ENEM - NOTA DE CORTE -->
+        <div class="projetos-box">
+          <img src="./imagens/euce-enem.png" alt="">
+          <div class="texto">
+            <h3 class="nome">UECE & ENEM</h3>
+            <p class="detalhe">É um site feito especialmente para os alunos que poderão calcular de forma rápida e
+              precisa a sua nota de corte na UECE ou do ENEM.</p>
+            <div class="ferramentas">
+              <i class='bx bxl-html5' style='color:#e65100' title="HTML"></i>
+              <i class='bx bxl-css3' style='color:#0277bd' title="CSS"></i>
+              <i class='bx bxl-javascript' style='color:#ffd600' title="JavaScript"></i>
+              <i class='bx bxl-bootstrap' style='color:#7c4dff' title="BOOTSTRAP"></i>
+            </div>
+
+            <div class="links">
+              <a href="https://github.com/Pablo-M-Santos/UECE" class="github" style="margin-left: 0px;"><i
+                  class='bx bxl-github'></i></a>
+              <a class="site" href="https://pablo-m-santos.github.io/UECE/">VER SITE<i id="seta"
+                  class='bx bx-chevron-right'></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MUNDO DIGITAL -->
+        <div class="projetos-box" id="right">
+          <div class="texto" id="texto">
+            <h3 class="nome">MUNDO DIGITAL</h3>
+            <p class="detalhe">
+              Explore o Mundo Digital, uma plataforma que integra de maneira eficiente o poder dos cálculos matemáticos
+              em suas atividades diárias.</p>
+            <div class="ferramentas">
+              <i class='bx bxl-html5' style='color:#e65100' title="HTML"></i>
+              <i class='bx bxl-css3' style='color:#0277bd' title="CSS"></i>
+              <i class='bx bxl-javascript' style='color:#ffd600' title="JavaScript"></i>
+            </div>
+            <div class="links">
+              <a class="site" href="https://pablo-m-santos.github.io/Mundo-Digital/">VER SITE<i id="seta"
+                  class='bx bx-chevron-right'></i></a>
+              <a href="https://github.com/Pablo-M-Santos/Mundo-Digital" class="github" style="margin-right: 0px;"><i
+                  class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <img id="img-right" src="./imagens/Mundo_Digital.png" alt="">
+        </div>
+
+        <!-- PRIMEIRO PROJETO -->
+        <div class="projetos-box">
+          <img src="./imagens/primeiro-projeto.png" alt="">
+          <div class="texto">
+            <h3 class="nome">PRIMEIRO PROJETO</h3>
+            <p class="detalhe">Esse foi o meu primeiro projeto oficial um formulário de cadastro de alunos.</p>
+            <div class="ferramentas">
+              <i class='bx bxl-html5' style='color:#e65100' title="HTML"></i>
+              <i class='bx bxl-css3' style='color:#0277bd' title="CSS"></i>
+              <i class='bx bxl-javascript' style='color:#ffd600' title="JavaScript"></i>
+            </div>
+
+            <div class="links">
+              <a href="https://github.com/Pablo-M-Santos/Primeiro_Projeto" class="github" style="margin-left: 0px;"><i
+                  class='bx bxl-github'></i></a>
+              <a class="site" href="https://pablo-m-santos.github.io/Primeiro_Projeto/">VER SITE<i id="seta"
+                  class='bx bx-chevron-right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <img class="onda" src="./imagens/onda-eventos.png" alt="">
+    <section class="eventos" id="eventos">
+      <div class="grid-layout">
+        <h2>Eventos</h2>
+        <div class="evento-container">
+          <article class="evento-card">
+            <div class="imagem-container">
+              <img src="./imagens/arduino_day.png" alt="ícone código" />
+            </div>
+            <h3>Desenvolvimento com Arduino</h3>
+            <p>
+              Criei sistemas destinados a eventos como o Arduino Day, incluindo um Seguidor de Linha e projetos para
+              exposição.
+            </p>
+          </article>
+
+          <article class="evento-card">
+            <div class="imagem-container">
+              <img src="./imagens/feprocic.png" alt="ícone imagem" />
+            </div>
+            <h3>FEPROCIC</h3>
+            <p>Participei do evento da Escola Luiza de Teodoro Viera na área de Informática, incluindo palestras e
+              projetos de Front-End.
+            </p>
+          </article>
+
+          <article class="evento-card">
+            <div class="imagem-container">
+              <img class="fabrica" src="./imagens/fabrica_de_programadores.png  " alt="ícone layers" />
+            </div>
+            <h3>Fábrica de Programadores</h3>
+            <p>
+              Participei do evento Programando com Games da Fábrica de Programadores, utilizando uma estrutura em blocos
+              por meio da IDE AppInventor.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="contato">
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="social-media" id="social-media-footer">
+            <a href="https://wa.me/558592822527?text=Olá!,%20eu%20vim%20do%20seu%20Portfólio
+            "><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/Pablo-M-Santos"><i class='bx bxl-github'></i></i></a>
+            <a href="https://www.linkedin.com/in/pablo-santos-25773025b/"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:pablomoreirasantos.hp@gmail.com"><i class='bx bx-envelope'></i></a>
+            <a href="https://www.instagram.com/pablo_santosti/"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+        <div class="footer-menus">
+          <nav class="navbar-footer">
+            <a href="#home">Home</a>
+            <a href="#quem-sou">Quem sou</a>
+            <a href="#formacao">Formação</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#eventos">Eventos</a>
+          </nav>
+        </div>
+        <div class="footer-direitos">
+          <p>&#169 2024 todos os direitos reservados a Pablo Santos</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+  <script src="main.js"></script>
 </body>
 
 </html>

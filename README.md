@@ -1,26 +1,39 @@
 <h1 align="center">
-  💻<br>Transmartins -  Pablo Santos
+  💻<br>Portfólio -  Pablo Santos
 </h1>
 
-![Resultado do projeto](./assets/img/foto-home.png)
+![Resultado do projeto](./imagens/foto-home.png)
 
-<h4 align="center"><a href="https://pablo-m-santos.github.io/Transmartins/">Clique para visitar o site</a></h4>
+<h4 align="center"><a href="https://pablo-m-santos.github.io/Portfolio/">Clique para visitar o meu projeto ( EM DESENVOLVIMENTO!! )</a></h4>
 
 ## 🌳 Projeto
-A Transmartins é uma empresa conta com uma frota moderna e diversificada, além de ser uma agência profissional de logística e cargas, visando sempre oferecer qualidade e segurança nos serviços prestados.
+O objetivo do portfólio é colocar meus projetos, informações sobre mim, informar meus conhecimentos, serviços e meu currículo, para a visualização das pessoas/empresas.
 
 ## 📃 Seções
-A Transmartins é composto por 5 seções diferentes:
+O portfólio é composto por 6 seções diferentes:
 
-  -  Seção Home: ** Nela temos uma breve apresentação da empresa;
-  -  Seção Sobre: ** Nessa seção tem uma breve descrição e sobre a empresa;
-  -  Seção Serviços: ** Apresenta todos os serviços da empresa e meios de tranporte;
-  -  Seção Blog: ** Nessa seção temos notícias e eventos relacionados a empresa ;
-  -  Seção Contato: ** apresenta formas de como o cliente pode entrar em conato conosco e informações de contato;
+  -  Seção Home: ** Nele temos uma breve apresentação e além disso, temos botão para baixar meu currículo;
+  -  Seção Quem sou: ** Nessa seção tem uma breve descrição dizendo sobre mim;
+  -  Seção Formação: ** Aqui apresenta meus conhecimentos e formações como desenvolvedor;
+  -  Seção Projetos: ** Apresenta alguns projetos organizados e com link direto para os respectivos códigos no GitHub;
+  -  Seção Serviços: ** Exibe através de cartões alguns serviços em que possuo conhecimentos;
+  -  Seção Contato: ** Nele temos links de contato e informações;
 
 ## 👨🏽‍💻 Tecnologias utilizadas
-Para o desenvolvimento da Transmartins usarei as seguintes tecnologias:
+Para o desenvolvimento do portfólio usei as seguintes tecnologias:
   - Visual Studio Code;
   - HTML ;
   - Css;
   - JavaScript ;
+
+## ⚙️ melhorias e atualizações
+O portfólio ainda está em desenvolvimento e as próximas atualizações serão feitas das seguintes maneiras:
+
+  -  [ ] Animação no site;
+  -  [ ] Adicionar o tema escuro;
+  -  [ ] Adicionar as cores corretas; 
+  -  [ ] Melhorias na responsividade mobile;
+  -  [ ] Melhoria no layout;
+  -  [ ] Adicionar projetos;
+  -  [ ] Imagens da minha pessoa;
+  -  [ ] Acessibilidade...
