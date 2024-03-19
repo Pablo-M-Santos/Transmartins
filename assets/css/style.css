@@ -949,9 +949,8 @@ form button:hover {
     }
 
     .imagens-sobre {
-        width: 380px;
+        width: 10px;
         padding-right: 30px;
-        margin-right: 300px;
         padding-bottom: 600px;
     }
 
@@ -1082,6 +1081,7 @@ form button:hover {
         width: 301px;
         gap: 30px;
     }
+
     .card {
         width: 285px;
     }
@@ -1101,4 +1101,91 @@ form button:hover {
         font-size: 15px;
     }
 
+}
+
+@media (max-width: 280px) {
+    .logo {
+        width: 190px;
+    }
+
+    .nav-bar {
+        padding: 1rem 1rem ;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .texto-home {
+        margin-left: 20px;
+    }
+
+    .texto-home h1 {
+        font-size: 55px;
+    }
+
+    .texto-home h2 {
+        font-size: 1rem;
+    }
+    
+    .texto-home button {
+        padding: 14px 20px;
+        font-size: 12px;
+    }
+    .imagens-sobre .trabalhador {
+        width: 185px;
+    }
+
+    .sobre {
+        margin-left: -20px;
+    }
+
+    .imagens-sobre {
+        padding-bottom: 400px;
+    }
+
+    .imagens-sobre .sol {
+        padding-top: 180px;
+        width: 140px;
+    }
+
+    .texto-sobre-img {
+        margin-top: 250px;
+        margin-left: 105px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .texto-sobre-img img {
+        width: 110px;
+        height: auto;
+    }
+
+    .servicos-lista {
+        width: auto;
+        padding: 20px;
+    }
+
+    .servicos-card h3 {
+        font-size: 15px;
+    }
+
+    .servicos-card {
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    .item img {
+        margin-bottom: 14px;
+    }
+
+    form {
+        padding-right: 0;
+    }
 }
