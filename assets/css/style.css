@@ -6,11 +6,11 @@
     font-family: 'Inter', sans-serif;
     list-style: none;
     scroll-behavior: smooth;
-     overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
