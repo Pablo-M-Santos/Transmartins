@@ -9,48 +9,51 @@ function menuShow() {
     }
 }
 
-// scroll sections and footer.
-let sections = document.querySelectorAll('section');
-let footer = document.querySelector('footer');
-let navLinks = document.querySelectorAll('header nav a');
+document.addEventListener('DOMContentLoaded', function() {
+    let sections = document.querySelectorAll('section');
+    let footer = document.querySelector('footer');
+    let navLinks = document.querySelectorAll('header nav a');
+    let menuMobile = document.querySelector('.mobile-menu');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 120;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            let targetLink = document.querySelector('header nav a[href="#' + id + '"]');
-            if (targetLink) {
-                targetLink.classList.add('active');
-            }
+    menuMobile.addEventListener('click', function(event) {
+        if (event.target.closest('a')) {
+            menuMobile.classList.remove('open');
+            document.querySelector('.icon').src = "../Transmartins/assets/img/menu.png";
         }
     });
 
-    // Check if in footer and update navbar
-    let footerTop = footer.offsetTop;
-    let windowHeight = window.innerHeight;
+    window.onscroll = () => {
+        sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 120;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
 
-    if (window.scrollY + windowHeight >= footerTop) {
-        navLinks.forEach(link => {
-            link.classList.remove('active');
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                let targetLink = document.querySelector('header nav a[href="#' + id + '"]');
+                if (targetLink) {
+                    targetLink.classList.add('active');
+                }
+            }
         });
-        let contactLink = document.querySelector('header nav a[href="#contato"]');
-        if (contactLink) {
-            contactLink.classList.add('active');
+
+        let footerTop = footer.offsetTop;
+        let windowHeight = window.innerHeight;
+
+        if (window.scrollY + windowHeight >= footerTop) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+            let contactLink = document.querySelector('header nav a[href="#contato"]');
+            if (contactLink) {
+                contactLink.classList.add('active');
+            }
         }
-    }
 
-    // sticky navbar
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
-
-    // remove navbar click navbar link (scroll)
-};
-
-
+        let header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 100);
+    };
+});
