@@ -82,13 +82,13 @@ header {
 .mobile-menu {
     display: none;
 }
-
+    
 
 /* HOME */
 
 .home {
     min-height: 100vh;
-    background-image: url(/assets/img/img-home.png);
+    background-image: url(/Transmartins/assets/img/img-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
